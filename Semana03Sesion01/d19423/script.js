@@ -69,4 +69,21 @@ console.log(typeof( nombre))
 
 
 //arrays
+
+
+
 //objects
+
+let objPersona = {
+  nombre: "X",
+  apellido: "y"
+    
+}
+
+console.log(objPersona)
+
+
+alert ("Bienvenido al sumador")
+let primerNumero = prompt ("Escribe el primero número")
+let SegundoNumero = prompt ("Escribe el segundo número")
+console.log(SegundoNumero)
