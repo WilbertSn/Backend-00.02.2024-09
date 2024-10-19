@@ -4,8 +4,8 @@ Algoritmo Ejercicio35
     mayor = -999999
     menor = 999999
 
-    Para i Desde 1 Hasta 20 Hacer
-        Escribir "Ingrese el número ", i, ": "
+    Para i Desde 1 Hasta 5 Hacer
+        Escribir "Ingrese el nï¿½mero ", i, ": "
         Leer numero
 		
 
@@ -19,6 +19,6 @@ Algoritmo Ejercicio35
         FinSi
     FinPara
 
-    Escribir "El número mayor es: ", mayor
-    Escribir "El número menor es: ", menor
+    Escribir "El nï¿½mero mayor es: ", mayor
+    Escribir "El nï¿½mero menor es: ", menor
 FinAlgoritmo

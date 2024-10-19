@@ -35,14 +35,17 @@ function recibirPedido() {
                 case 1:
                     objCliente.cafe = { tipo: "Expresso" }
                     objCliente = preguntarAzucar(objCliente)
+                    objCliente =preguntarLeche(objCliente)
                     break;
                 case 2:
-                    objCliente.cafe = { tipo: "Americanp" }
+                    objCliente.cafe = { tipo: "Americano" }
                     objCliente = preguntarAzucar(objCliente)
+                    objCliente =preguntarLeche(objCliente)
                     break;
                 case 3:
                     objCliente.cafe = { tipo: "Late" }
                     objCliente = preguntarAzucar(objCliente)
+                    objCliente =preguntarLeche(objCliente)
                     break;
 
                 default:
@@ -103,7 +106,33 @@ function preguntarAzucar(objCliente) {
 
 }
 
+function preguntarLeche(objCliente) {
+    
+    respuesta =  prompt ("¿Qué tipo de leche desea? 1 =  Normal , 2 = Leche de Soya , 3 = Leche de Almendras")
 
+switch (respuesta) {
+    case "1":
+        objCliente.cafe.leche=true
+        objCliente.cafe.lecheTipo="Normal"
+
+        break;
+    case "2" : 
+
+    objCliente.cafe.leche=true
+    objCliente.cafe.lecheTipo="Leche de Soya"
+
+
+    case "3" : 
+
+    objCliente.cafe.leche=true
+    objCliente.cafe.lecheTipo="Leche de Almendras"
+
+    default:
+        break;
+}
+return objCliente
+
+}
 
 document.getElementById("btnPedir").addEventListener('click',(e)=>{
     e.preventDefault();
